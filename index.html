@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Plate Restauran</title>
+
+    <!--CSS start-->
+    <style>
+        body{
+            margin: 0px;
+            background-image: url();
+        }
+        *{
+          box-sizing: border-box;
+        }
+
+        ul {
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: #000000;
+        }
+        li {
+            float: right;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover:not(.active) {
+            background-color: #1f1e1e;
+        }
+        .image{
+           position: relative;
+           text-align: center;
+           color: white;
+        }
+        .centered {
+           position: absolute;
+           top: 20%;
+           left: 20%;
+           font-size: 110px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+        }
+        .home-discri{
+           position: absolute;
+           top: 38%;
+           left: 40%;
+           font-size: 20px;
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .home-btn{
+           position: absolute;
+           top: 49%;
+           left: 44%;
+       }
+        button {
+           border: none;
+           color: white;
+           border-radius: 20px;
+           padding: 16px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 20px;
+           margin: 4px 2px;
+           cursor: pointer;
+           background-color: rgb(0, 0, 0); 
+           border: 2px solid #edf10d;
+        }
+        a{
+           display: block;
+           color: white;
+           text-align: center;
+           text-decoration: none;
+        }
+        #home-img{
+            width: 100%;
+            height: 93vh;
+        }
+        #home{
+            height: 98vh;
+        }
+
+        /*offers part*/
+        #offers{
+            background-color: #1B1B1B;
+            margin: 0px;
+            height: 100vh;
+            color: white;
+        }
+        #offers-topic{
+            margin-top: 0px;
+            padding-top: 30px;
+            font-size: 90px;
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 13px;
+            text-align: center;
+            border: 1px solid #1B1B1B;
+        }
+        th {
+            background-color: #000000;
+            color: #fff700;
+        }
+        tr:nth-child(even) {
+            background-color: #000000;
+        }
+
+        /*video part*/
+        #videos{
+            margin: 0px;
+            height: 100vh;
+            color: white;
+        }
+        #vedio-image{
+            width: 100%;
+            height: 100vh;
+        }
+        .vedio-img{
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .video-topic{
+            position: absolute;
+            top: 20px;
+            left: 41%;
+            font-size: 100px;
+            color: #edf10d;
+        }
+        .youtube-vedio1{
+            position: absolute;
+            float: left;
+            top: 33%;
+            left: 4%;
+        }
+        .youtube-vedio2{
+            position: absolute;
+            float: right;
+            top: 33%;
+            left: 54%;
+        }
+
+        /*our story part*/
+        #OurStory{
+            background-color: #1B1B1B;
+            margin: 0px;
+            height: 100vh;
+            color: #ffffff;
+        }
+        .story-img{
+            width: 50%;
+            float: left;
+            padding-left: 17%;
+        }
+        .pra-story{
+            width: 50%;
+            float: left;
+        }
+        pre{
+            text-align: center;
+            width: 50%;
+            color: #edf10d;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /*contact us part*/
+        #Contact{
+            margin: 0px;
+            height: 100vh;
+            color: white;
+        }
+        .contact-topic{
+            position: absolute;
+            top: 15px;
+            left: 55%;
+            font-size: 100px;
+            color: #edf10d;
+        }
+        .form{
+            position: absolute;
+            top: 18%;
+            left: 55%;
+            width: 40%;
+            float: right;   
+            border-radius: 5px;
+            background-color: #1B1B1B;
+            padding: 20px;
+        }
+        input[type=submit] {
+           background-color: #edf10d;
+           color: black;
+           padding: 12px 20px;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+        }
+        input[type=text], select, textarea {
+           width: 80%;
+           padding: 12px; 
+           border-radius: 4px; 
+           box-sizing: border-box; 
+           margin-top: 6px; 
+        }
+        /*footer*/
+        footer {
+          text-align: center;
+          padding: 3px;
+          background-color: rgb(0, 0, 0);
+          color: white;
+        }
+    </style>
+    <!--CSS end-->
+</head>
+<body>
+
+    <!--home part-->
+    <div id="home">
+        <!--navigation bar-->
+        <ul>
+            <li><a href="#Contact">Conract Us</a></li>
+            <li><a href="#OurStory">Our Story</a></li>
+            <li><a href="#videos">Videos</Video></a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+
+        <div class="image">
+            <img src="https://adivinedish.co.nz/wp-content/uploads/2023/04/Chocolate-Torte-3.jpg" alt="resturen" id="home-img">
+            <div class="centered">Classic Plate Restaurant</div>
+            <div class="home-discri">Experience Culinary Delight with Us</div>
+            <div class="home-btn"><button type="button"><a href="#offers">Today Offers</a></button></div>
+      </div>
+    </div>
+
+    <!--Offers part-->
+    <div id="offers">
+        <p id="offers-topic">Offers</p>
+
+        <table>
+            <tr>
+                <th>Offer Description</th>
+                <th>Discount</th>
+            </tr>
+            <tr>
+                <td>Daily Specials</td>
+                <td>20% off</td>
+            </tr>
+            <tr>
+                <td>Happy Hour (Weekdays)</td>
+                <td>30% off</td>
+            </tr>
+            <tr>
+                <td>Family-Friendly Deals</td>
+                <td>15% off</td>
+            </tr>
+            <tr>
+                <td>Weekend Brunch (Sat & Sun)</td>
+                <td>10% off</td>
+            </tr>
+            <tr>
+                <td>Seasonal Specials</td>
+                <td>Varies</td>
+            </tr>
+            <tr>
+                <td>Loyalty Program</td>
+                <td>Exclusive Benefits</td>
+            </tr>
+            <tr>
+                <td>Catering Specials</td>
+                <td>Custom Packages</td>
+            </tr>
+            <tr>
+                <td>Gift Cards</td>
+                <td>Purchase Amount</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--videos part-->
+    <div id="videos">
+        <div class="vedio-img">
+            <img src="https://cdn.pixabay.com/photo/2017/08/02/17/28/food-2572534_1280.jpg" alt="cake" id="vedio-image">
+            <div class="video-topic">Videos</div>
+            <div class="youtube-vedio1">
+                <iframe src="https://www.youtube.com/embed/Y88uxC0OmwA?autoplay=1&mute=1" width="640px" height="430"></iframe>
+            </div>
+            <div class="youtube-vedio2">
+                <iframe src="https://www.youtube.com/embed/oItynb-xBtU?autoplay=1&mute=1" width="640px" height="430"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--Our story-->
+    <div id="OurStory">
+        <p id="offers-topic">Our Story</p>
+       
+        <div class="story-img">
+            <img src="https://alldayidreamaboutfood.com/wp-content/uploads/2023/05/Death-by-Keto-Chocolate-Cake.jpg" width="280px">
+        </div>
+        <div class="pra-story">
+             <pre>
+            Classic Plate Restaurant is a 
+            culinary journey with roots 
+            in tradition and a passion for 
+            timeless flavors. 
+            Founded in 2000 by mr.sunil, 
+            our mission is simple: 
+            "Food that warms the heart." 
+            We celebrate classic dishes, 
+            prepared with care and authenticity. 
+            Come,be part of our story.
+
+            <a href="https://www.pdxmonthly.com/eat-and-drink/portland-s-restaurant-history-the-people-places-and-plates-that-set-our-city-s-epic-table">
+                (click  me to more details)
+            </a>
+             </pre>
+        </div>
+    </div>
+
+    <!--contact us-->
+    <div id="Contact">
+        <div class="vedio-img">
+           <img src="https://cdn.pixabay.com/photo/2017/08/02/17/28/food-2572534_1280.jpg" alt="cake" id="vedio-image">
+           <div class="contact-topic">Contact Us</div>
+           <div class="form">
+            <form>
+                <label for="fname">First Name</label><br>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <br>
+                <br>
+                <label for="lname">Last Name</label><br>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <br>
+                <label for="topic">Topic</label><br>
+                <input type="text" id="topic" name="topic" placeholder="Tpoic">
+                <br>
+                <br>
+                <label for="subject">Subject</label><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+              </form>
+           </div>
+        </div>
+    </div>
+            
+    <!--footer-->
+    <footer>
+        <p>&#169 copyright 2023</p>
+    </footer>
+</body>
+</html>
